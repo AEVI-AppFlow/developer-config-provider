@@ -1,2 +1,2 @@
-# android-developer-kit
-Contains applications and scripts to support AppFlow development on Android
+# Developer Config Provider
+Contains an AppFlow flow configuration provider designed specifically for developers.
