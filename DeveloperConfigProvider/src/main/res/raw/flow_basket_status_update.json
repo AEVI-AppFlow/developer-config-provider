@@ -5,8 +5,7 @@
       "name": "STATUS_UPDATE",
       "flowApps": [
         {
-          "id": "com.aevi.sdk.pos.flow.flowservicesample",
-          "mandatory": true
+          "id": "com.aevi.sdk.pos.flow.flowservicesample"
         }
       ]
     }
