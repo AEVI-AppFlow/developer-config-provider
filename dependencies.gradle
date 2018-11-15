@@ -8,8 +8,8 @@ ext {
     appFlowConstantsVersion = '2.0.8'
 
     // For bundles
-    appFlowVersion = '2.0.0-RC3'
-    fpsVersion = '2.0.0-RC3'
+    appFlowVersion = '2.0.0-SNAPSHOT'
+    fpsVersion = '2.0.0-SNAPSHOT'
     paymentLegacyAppsVersion = '2.0.0-RC3'
 
     projectTargetSdkVersion = 28

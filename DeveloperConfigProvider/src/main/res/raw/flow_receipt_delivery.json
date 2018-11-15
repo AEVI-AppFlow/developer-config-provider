@@ -11,7 +11,7 @@
     }
   ],
   "type": "receiptDelivery",
-  "name": "receiptDelivery",
+  "name": "sampleReceiptDelivery",
   "description": "Sample receipt delivery flow",
   "apiMajorVersion": 2
 }
