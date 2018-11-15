@@ -12,6 +12,11 @@ public class SampleConfigProviderApplication extends BaseConfigProviderApplicati
 
     @Override
     protected int[] getFlowConfigs() {
-        return new int[]{R.raw.flow_sale, R.raw.flow_refund, R.raw.flow_reversal, R.raw.flow_tokenisation, R.raw.flow_receipt_delivery};
+        return new int[]{R.raw.flow_sale,
+                         R.raw.flow_refund,
+                         R.raw.flow_reversal,
+                         R.raw.flow_tokenisation,
+                         R.raw.flow_receipt_delivery,
+                         R.raw.flow_basket_status_update};
     }
 }

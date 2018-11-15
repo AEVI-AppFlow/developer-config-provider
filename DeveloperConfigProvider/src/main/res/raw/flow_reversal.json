@@ -5,8 +5,7 @@
       "name": "GENERIC",
       "flowApps": [
         {
-          "id": "com.aevi.sdk.pos.flow.paymentservicesample",
-          "mandatory": true
+          "id": "com.aevi.sdk.pos.flow.paymentservicesample"
         }
       ]
     }

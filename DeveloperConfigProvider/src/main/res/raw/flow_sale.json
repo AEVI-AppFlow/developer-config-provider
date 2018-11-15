@@ -27,8 +27,7 @@
             "name": "PAYMENT_CARD_READING",
             "flowApps": [
               {
-                "id": "com.aevi.sdk.pos.flow.paymentservicesample",
-                "mandatory": true
+                "id": "com.aevi.sdk.pos.flow.paymentservicesample"
               }
             ]
           },
@@ -46,8 +45,7 @@
             "name": "TRANSACTION_PROCESSING",
             "flowApps": [
               {
-                "id": "com.aevi.sdk.pos.flow.paymentservicesample",
-                "mandatory": true
+                "id": "com.aevi.sdk.pos.flow.paymentservicesample"
               }
             ]
           },

@@ -1,0 +1,17 @@
+{
+  "stages": [
+    {
+      "appExecutionType": "MULTIPLE",
+      "name": "STATUS_UPDATE",
+      "flowApps": [
+        {
+          "id": "com.aevi.sdk.pos.flow.flowservicesample"
+        }
+      ]
+    }
+  ],
+  "type": "basketStatusUpdate",
+  "name": "sampleBasketStatusUpdate",
+  "description": "Sample basket status update flow",
+  "apiMajorVersion": 2
+}
