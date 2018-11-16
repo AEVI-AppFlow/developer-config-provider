@@ -4,13 +4,13 @@ ext {
     supportLibraryVersion = '28.0.0'
     designLibraryVersion = '28.0.0'
     constraintLayoutVersion = '1.0.2'
-    configProviderLibraryVersion = "1.0.0-RC1"
+    configProviderLibraryVersion = "1.0.0-RC3"
     appFlowConstantsVersion = '2.0.8'
 
     // For bundles
     appFlowVersion = '2.0.0-SNAPSHOT'
     fpsVersion = '2.0.0-SNAPSHOT'
-    paymentLegacyAppsVersion = '2.0.0-RC3'
+    paymentLegacyAppsVersion = '2.0.0-SNAPSHOT'
 
     projectTargetSdkVersion = 28
     projectMinSdkVersion = 21
