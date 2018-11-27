@@ -1,0 +1,17 @@
+{
+  "stages": [
+    {
+      "appExecutionType": "SINGLE_SELECT",
+      "name": "GENERIC",
+      "flowApps": [
+        {
+          "id": "com.aevi.sdk.pos.flow.flowservicesample"
+        }
+      ]
+    }
+  ],
+  "type": "receiptDelivery",
+  "name": "sampleReceiptDelivery",
+  "description": "Sample receipt delivery flow",
+  "apiMajorVersion": 2
+}

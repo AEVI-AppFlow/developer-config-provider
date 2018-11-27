@@ -1,0 +1,29 @@
+ext {
+    butterKnifeVersion = '8.8.1'
+    recyclerViewVersion = '28.0.0'
+    supportLibraryVersion = '28.0.0'
+    designLibraryVersion = '28.0.0'
+    constraintLayoutVersion = '1.0.2'
+    configProviderLibraryVersion = "1.0.0"
+    appFlowConstantsVersion = '2.0.11'
+
+    projectTargetSdkVersion = 28
+    projectMinSdkVersion = 21
+
+    appDependencies = [
+            configProviderLibrary: "com.aevi.sdk.pos.flow.config:config-provider-library:$configProviderLibraryVersion",
+            butterKnife          : "com.jakewharton:butterknife:$butterKnifeVersion",
+            support              : "com.android.support:support-v4:$supportLibraryVersion",
+            recyclerView         : "com.android.support:recyclerview-v7:$recyclerViewVersion",
+            cardView             : "com.android.support:cardview-v7:$supportLibraryVersion",
+            appCompat            : "com.android.support:appcompat-v7:$supportLibraryVersion",
+            supportAnnotation    : "com.android.support:support-annotations:$supportLibraryVersion",
+            design               : "com.android.support:design:$designLibraryVersion",
+            constraintLayout     : "com.android.support.constraint:constraint-layout:$constraintLayoutVersion",
+            appFlowConstants     : "com.aevi.sdk.flow:api-constants:$appFlowConstantsVersion"
+    ]
+
+    appAptDependencies = [
+            butterKnife: "com.jakewharton:butterknife-compiler:$butterKnifeVersion",
+    ]
+}
