@@ -10,7 +10,13 @@
       ]
     },
     {
+      "name": "SPLIT",
       "appExecutionType": "SINGLE",
+      "flowApps": [
+        {
+          "id": "com.aevi.sdk.pos.flow.flowservicesample"
+        }
+      ],
       "innerFlow": {
         "stages": [
           {
@@ -41,13 +47,22 @@
             ]
           },
           {
-            "appExecutionType": "SINGLE_SELECT",
-            "name": "TRANSACTION_PROCESSING",
-            "flowApps": [
-              {
-                "id": "com.aevi.sdk.pos.flow.paymentservicesample"
-              }
-            ]
+            "name": "FULFILLED_CHECK",
+            "appExecutionType": "NONE",
+            "innerFlow": {
+              "stages": [
+                {
+                  "appExecutionType": "SINGLE_SELECT",
+                  "name": "TRANSACTION_PROCESSING",
+                  "flowApps": [
+                    {
+                      "id": "com.aevi.sdk.pos.flow.paymentservicesample",
+                      "mandatory": true
+                    }
+                  ]
+                }
+              ]
+            }
           },
           {
             "appExecutionType": "MULTIPLE",
@@ -60,13 +75,7 @@
           }
         ],
         "type": "transaction"
-      },
-      "name": "SPLIT",
-      "flowApps": [
-        {
-          "id": "com.aevi.sdk.pos.flow.flowservicesample"
-        }
-      ]
+      }
     },
     {
       "appExecutionType": "SINGLE_SELECT",
