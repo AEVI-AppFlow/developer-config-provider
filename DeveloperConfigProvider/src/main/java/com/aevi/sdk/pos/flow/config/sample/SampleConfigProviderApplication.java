@@ -2,6 +2,8 @@ package com.aevi.sdk.pos.flow.config.sample;
 
 import com.aevi.sdk.pos.flow.config.BaseConfigProviderApplication;
 
+import static com.aevi.sdk.pos.flow.config.ConfigComponentProvider.getSettingsProvider;
+
 public class SampleConfigProviderApplication extends BaseConfigProviderApplication {
 
     @Override
