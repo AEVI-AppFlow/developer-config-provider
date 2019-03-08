@@ -13,5 +13,6 @@
   "type": "reversal",
   "name": "sampleReversal",
   "description": "Sample reversal flow",
+  "processInBackground": true,
   "apiMajorVersion": 2
 }
