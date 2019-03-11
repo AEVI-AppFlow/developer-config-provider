@@ -3,30 +3,18 @@
     {
       "appExecutionType": "SINGLE_SELECT",
       "name": "PRE_FLOW",
-      "flowApps": [
-        {
-          "id": "com.aevi.sdk.pos.flow.flowservicesample"
-        }
-      ]
+      "flowApps": []
     },
     {
       "name": "SPLIT",
-      "appExecutionType": "SINGLE",
-      "flowApps": [
-        {
-          "id": "com.aevi.sdk.pos.flow.flowservicesample"
-        }
-      ],
+      "appExecutionType": "SINGLE_SELECT",
+      "flowApps": [],
       "innerFlow": {
         "stages": [
           {
             "appExecutionType": "MULTIPLE",
             "name": "PRE_TRANSACTION",
-            "flowApps": [
-              {
-                "id": "com.aevi.sdk.pos.flow.flowservicesample"
-              }
-            ]
+            "flowApps": []
           },
           {
             "appExecutionType": "SINGLE_SELECT",
@@ -71,15 +59,11 @@
     {
       "appExecutionType": "SINGLE_SELECT",
       "name": "POST_FLOW",
-      "flowApps": [
-        {
-          "id": "com.aevi.sdk.pos.flow.flowservicesample"
-        }
-      ]
+      "flowApps": []
     }
   ],
   "type": "sale",
   "name": "sampleSale",
-  "description": "Sample sale flow",
+  "description": "Sample sale flow (without fulfilled check)",
   "apiMajorVersion": 2
 }

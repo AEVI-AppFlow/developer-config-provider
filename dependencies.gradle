@@ -4,8 +4,8 @@ ext {
     supportLibraryVersion = '28.0.0'
     designLibraryVersion = '28.0.0'
     constraintLayoutVersion = '1.0.2'
-    configProviderLibraryVersion = "2.0.0-RC2"
-    appFlowConstantsVersion = '2.0.16'
+    configProviderLibraryVersion = "2.0.0-RC3"
+    appFlowConstantsVersion = '2.1.0'
 
     projectTargetSdkVersion = 28
     projectMinSdkVersion = 21

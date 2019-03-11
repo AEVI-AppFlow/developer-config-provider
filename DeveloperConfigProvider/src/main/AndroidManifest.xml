@@ -25,6 +25,28 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="com.aevi.sdk.pos.flow.config.ui.FlowConfigFilterActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth">
+        </activity>
+
+        <activity
+            android:name="com.aevi.sdk.pos.flow.config.ui.FlowAppDetailsActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth">
+
+        </activity>
+
+        <activity
+            android:name="com.aevi.ui.library.dialog.AeviDialogActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth">
+        </activity>
+
         <provider
             android:name="com.aevi.sdk.pos.flow.config.DefaultConfigProvider"
             android:authorities="com.aevi.sdk.config.provider.sample"

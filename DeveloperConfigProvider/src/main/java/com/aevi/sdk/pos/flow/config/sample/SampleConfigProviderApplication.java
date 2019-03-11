@@ -9,8 +9,11 @@ public class SampleConfigProviderApplication extends BaseConfigProviderApplicati
 
     @Override
     protected void onComponentsReady() {
-        getSettingsProvider().updateAutoGenerateConfig(true);
         getSettingsProvider().setOverwriteConfigsOnReinstall(true);
+        getSettingsProvider().setInitialAutoGenerateConfigsValue(true);
+        // We want the samples to be as we have pre-defined it in the flows here - so we ignore them for the "auto" management
+        getSettingsProvider().setAppsToIgnoreForAutoGeneration("com.aevi.sdk.pos.flow.flowservicesample",
+                                                               "com.aevi.sdk.pos.flow.paymentservicesample");
     }
 
     @Override
