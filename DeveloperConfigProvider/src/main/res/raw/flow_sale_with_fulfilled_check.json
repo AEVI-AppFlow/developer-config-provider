@@ -7,7 +7,7 @@
     },
     {
       "name": "SPLIT",
-      "appExecutionType": "SINGLE_SELECT",
+      "appExecutionType": "SINGLE",
       "flowApps": [],
       "innerFlow": {
         "stages": [
@@ -35,13 +35,21 @@
             ]
           },
           {
-            "appExecutionType": "SINGLE_SELECT",
-            "name": "TRANSACTION_PROCESSING",
-            "flowApps": [
-              {
-                "id": "com.aevi.sdk.pos.flow.paymentservicesample"
-              }
-            ]
+            "name": "FULFILLED_CHECK",
+            "appExecutionType": "NONE",
+            "innerFlow": {
+              "stages": [
+                {
+                  "appExecutionType": "SINGLE_SELECT",
+                  "name": "TRANSACTION_PROCESSING",
+                  "flowApps": [
+                    {
+                      "id": "com.aevi.sdk.pos.flow.paymentservicesample"
+                    }
+                  ]
+                }
+              ]
+            }
           },
           {
             "appExecutionType": "MULTIPLE",
@@ -64,6 +72,6 @@
   ],
   "type": "sale",
   "name": "sampleSale",
-  "description": "Sample sale flow (without fulfilled check)",
+  "description": "Sample sale flow (with fulfilled check)",
   "apiMajorVersion": 2
 }
