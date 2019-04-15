@@ -4,8 +4,9 @@ ext {
     supportLibraryVersion = '28.0.0'
     designLibraryVersion = '28.0.0'
     constraintLayoutVersion = '1.0.2'
-    configProviderLibraryVersion = "2.0.0-RC6"
+    configProviderLibraryVersion = "2.0.0-RC7"
     appFlowConstantsVersion = '2.1.0'
+    aeviUiLibraryVersion = '2.0.3'
 
     projectTargetSdkVersion = 28
     projectMinSdkVersion = 21
@@ -20,7 +21,8 @@ ext {
             supportAnnotation    : "com.android.support:support-annotations:$supportLibraryVersion",
             design               : "com.android.support:design:$designLibraryVersion",
             constraintLayout     : "com.android.support.constraint:constraint-layout:$constraintLayoutVersion",
-            appFlowConstants     : "com.aevi.sdk.flow:api-constants:$appFlowConstantsVersion"
+            appFlowConstants     : "com.aevi.sdk.flow:api-constants:$appFlowConstantsVersion",
+            aeviUiLibrary        : "com.aevi.ui.library:ui-library:$aeviUiLibraryVersion@aar",
     ]
 
     appAptDependencies = [
