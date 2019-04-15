@@ -1,5 +1,5 @@
-version = "2.1.0-RC6"
-ext.sampleVersionCode = 2010006 // semver based, MMmmppbb (major minor patch build) without leading zero for MM
+version = "2.1.0-RC7"
+ext.sampleVersionCode = 2010007 // semver based, MMmmppbb (major minor patch build) without leading zero for MM
 
 buildscript {
     repositories {
