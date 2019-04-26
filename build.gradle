@@ -1,5 +1,5 @@
-version = "2.0.0"
-ext.sampleVersionCode = 2000000 // semver based, MMmmppbb (major minor patch build) without leading zero for MM
+version = "2.1.0"
+ext.sampleVersionCode = 2010000 // semver based, MMmmppbb (major minor patch build) without leading zero for MM
 
 buildscript {
     repositories {
@@ -10,7 +10,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.3.2'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.1'
     }
 }
@@ -27,15 +27,9 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
-        maven {
-            url "http://dl.bintray.com/aevi/aevi-uk"
-        }
-        maven {
-            url "http://sdk-public-artifacts.s3-website-eu-west-1.amazonaws.com/maven2"
-        }
         if (project.hasProperty('aws_accessid')) {
             maven {
-                url "s3://sdk-snapshots.aevi.com/maven2"
+                url "s3://sdk-releases.aevi.com/maven2"
                 credentials(AwsCredentials) {
                     accessKey aws_accessid
                     secretKey aws_accesskey
@@ -49,12 +43,18 @@ allprojects {
                 }
             }
             maven {
-                url "s3://sdk-releases.aevi.com/maven2"
+                url "s3://sdk-snapshots.aevi.com/maven2"
                 credentials(AwsCredentials) {
                     accessKey aws_accessid
                     secretKey aws_accesskey
                 }
             }
+        }
+        maven {
+            url "http://dl.bintray.com/aevi/aevi-uk"
+        }
+        maven {
+            url "http://sdk-public-artifacts.s3-website-eu-west-1.amazonaws.com/maven2"
         }
     }
 }
