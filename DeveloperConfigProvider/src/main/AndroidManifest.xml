@@ -48,7 +48,7 @@
         </activity>
 
         <provider
-            android:name="com.aevi.sdk.pos.flow.config.DefaultConfigProvider"
+            android:name=".SampleConfigProvider"
             android:authorities="com.aevi.sdk.config.provider.sample"
             android:exported="true">
             <intent-filter>
