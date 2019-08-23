@@ -27,6 +27,8 @@ public class SampleConfigProviderApplication extends BaseConfigProviderApplicati
                          R.raw.flow_reversal,
                          R.raw.flow_tokenisation,
                          R.raw.flow_receipt_delivery,
-                         R.raw.flow_basket_status_update};
+                         R.raw.flow_basket_status_update,
+                         R.raw.flow_batch_close
+        };
     }
 }

@@ -1,0 +1,17 @@
+{
+  "stages": [
+    {
+      "appExecutionType": "SINGLE_SELECT",
+      "name": "GENERIC",
+      "flowApps": [
+        {
+          "id": "com.aevi.sdk.pos.flow.paymentservicesample"
+        }
+      ]
+    }
+  ],
+  "type": "batchClosure",
+  "name": "sampleBatchClose",
+  "description": "Sample batch close",
+  "apiMajorVersion": 2
+}
