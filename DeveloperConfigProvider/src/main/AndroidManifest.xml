@@ -64,8 +64,7 @@
                 <action android:name="android.intent.action.PACKAGE_INSTALL"/>
                 <action android:name="android.intent.action.PACKAGE_ADDED"/>
                 <action android:name="android.intent.action.PACKAGE_REMOVED"/>
-                <action android:name="com.aevi.intent.action.PAYMENT_SERVICE_INFO_CHANGE"/>
-                <action android:name="com.aevi.intent.action.FLOW_SERVICE_INFO_CHANGE"/>
+                <action android:name="com.aevi.sdk.flow.action.PROCESS_SERVICE_INFO_CHANGE"/>
 
                 <data android:scheme="package"/>
             </intent-filter>
