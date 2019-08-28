@@ -1,0 +1,17 @@
+{
+  "stages": [
+    {
+      "appExecutionType": "SINGLE",
+      "name": "GENERIC",
+      "flowApps": [
+        {
+          "id": "com.aevi.appflow.storage"
+        }
+      ]
+    }
+  ],
+  "type": "storeData",
+  "name": "storeData",
+  "description": "Store data flow",
+  "apiMajorVersion": 2
+}
