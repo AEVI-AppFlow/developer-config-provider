@@ -1,4 +1,4 @@
-version = "2.1.1"
+version = "2.1.2-SNAPSHOT"
 ext.sampleVersionCode = 2010100 // semver based, MMmmppbb (major minor patch build) without leading zero for MM
 
 buildscript {
@@ -10,7 +10,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.android.tools.build:gradle:3.6.3'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.1'
     }
 }
