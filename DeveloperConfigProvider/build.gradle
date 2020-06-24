@@ -45,13 +45,9 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
-    implementation(appDependencies.support) { force = true }
-    implementation(appDependencies.appCompat) { force = true }
-
     implementation(appDependencies.configProviderLibrary) {
         exclude group: 'com.aevi.ui.library', module: 'ui-library'
     }
-    implementation appDependencies.aeviUiLibrary
     implementation appDependencies.appFlowConstants
 
     implementation appDependencies.butterKnife

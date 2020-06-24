@@ -64,6 +64,7 @@
   ],
   "type": "sale",
   "name": "sampleSale",
+  "allowZeroAmounts": true,
   "description": "Sample sale flow (without fulfilled check)",
   "apiMajorVersion": 2
 }
