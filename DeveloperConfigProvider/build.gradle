@@ -1,24 +1,16 @@
 apply plugin: 'com.android.application'
 
-apply from: '../dependencies.gradle'
-apply from: "../artifacts.gradle"
-apply from: "../publish-repo.gradle"
-apply from: "../publish-repo-android.gradle"
-
+ext.applicationId = "com.aevi.sdk.pos.flow.config.sample"
 ext.applicationName = "DeveloperConfigProvider"
-ext.artifactIdPrefix = "developer-config-provider"
-ext.artifactGroupId = "com.aevi.sdk.pos.flow"
+ext.applicationTargetSdkVersion = 29
+ext.applicationMinSdkVersion = 21
+
+apply from: gradleScript('android/artifacts.gradle')
+apply from: gradleScript('android/versioning.gradle')
+apply from: gradleScript('android/basic-android.gradle')
+
 
 android {
-    compileSdkVersion projectTargetSdkVersion
-
-    defaultConfig {
-        applicationId 'com.aevi.sdk.pos.flow.config.sample'
-        minSdkVersion projectMinSdkVersion
-        targetSdkVersion projectTargetSdkVersion
-        versionCode sampleVersionCode
-        versionName "${apiVersion}"
-    }
     signingConfigs {
         release {
             storeFile file("../samples-key.jks")
@@ -33,18 +25,12 @@ android {
             signingConfig signingConfigs.release
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
     lintOptions {
         abortOnError false
     }
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-
     implementation(appDependencies.configProviderLibrary) {
         exclude group: 'com.aevi.ui.library', module: 'ui-library'
     }

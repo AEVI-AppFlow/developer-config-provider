@@ -1,60 +1,39 @@
-version = "2.1.2-SNAPSHOT"
-ext.sampleVersionCode = 2010100 // semver based, MMmmppbb (major minor patch build) without leading zero for MM
-
 buildscript {
     repositories {
-        jcenter()
         google()
+        jcenter()
         maven {
-            url 'https://plugins.gradle.org/m2/'
+            name = "github-aevi-uk"
+            url = uri("https://maven.pkg.github.com/aevi-uk/gradle-scripts")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR") ?: gh_username
+                password = System.getenv("GITHUB_TOKEN") ?: gh_token
+            }
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.3'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.1'
+        classpath 'com.android.tools.build:gradle:4.1.2'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.3'
+        classpath 'com.aevi.sdk.build:gradle-scripts:1.0.8'
     }
 }
 
-allprojects {
-
-    project.ext {
-        apiVersion = rootProject.version
-        sampleVersionCode = rootProject.sampleVersionCode
-    }
-
-    repositories {
-        mavenLocal()
-        google()
-        jcenter()
-        mavenCentral()
-        if (project.hasProperty('aws_accessid')) {
-            maven {
-                url "s3://sdk-releases.aevi.com/maven2"
-                credentials(AwsCredentials) {
-                    accessKey aws_accessid
-                    secretKey aws_accesskey
-                }
-            }
-            maven {
-                url "s3://sdk-qa.aevi.com/maven2"
-                credentials(AwsCredentials) {
-                    accessKey aws_accessid
-                    secretKey aws_accesskey
-                }
-            }
-            maven {
-                url "s3://sdk-snapshots.aevi.com/maven2"
-                credentials(AwsCredentials) {
-                    accessKey aws_accessid
-                    secretKey aws_accesskey
-                }
-            }
-        }
-        maven {
-            url "http://dl.bintray.com/aevi/aevi-uk"
-        }
-        maven {
-            url "http://sdk-public-artifacts.s3-website-eu-west-1.amazonaws.com/maven2"
-        }
-    }
+ext.gradleScript = { path ->
+    return rootProject.buildscript.classLoader.getResource(path).toURI()
 }
+
+apply from: gradleScript('root/common-tasks.gradle')
+apply from: gradleScript('root/repositories.gradle')
+
+apply from: 'dependencies.gradle'
+
+
+
+
+
+
+
+
+
+
+
