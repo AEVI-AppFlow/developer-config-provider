@@ -1,7 +1,7 @@
 ext {
     butterKnifeVersion = '10.2.3'
     constraintLayoutVersion = '1.0.2'
-    configProviderLibraryVersion = "2.1.1-SNAPSHOT"
+    configProviderLibraryVersion = "2.1.1"
     appFlowConstantsVersion = '2.3.2'
     aeviUiLibraryVersion = '2.0.3'
 
