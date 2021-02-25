@@ -1,12 +1,9 @@
 ext {
-    butterKnifeVersion = '10.2.1'
+    butterKnifeVersion = '10.2.3'
     constraintLayoutVersion = '1.0.2'
-    configProviderLibraryVersion = "2.1.0"
+    configProviderLibraryVersion = "2.1.2"
     appFlowConstantsVersion = '2.3.2'
     aeviUiLibraryVersion = '2.0.3'
-
-    projectTargetSdkVersion = 28
-    projectMinSdkVersion = 21
 
     appDependencies = [
             configProviderLibrary: "com.aevi.sdk.pos.flow.config:config-provider-library:$configProviderLibraryVersion",
