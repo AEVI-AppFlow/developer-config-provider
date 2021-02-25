@@ -31,11 +31,6 @@ android {
 }
 
 dependencies {
-    implementation(appDependencies.configProviderLibrary) {
-        exclude group: 'com.aevi.ui.library', module: 'ui-library'
-    }
+    implementation appDependencies.configProviderLibrary
     implementation appDependencies.appFlowConstants
-
-    implementation appDependencies.butterKnife
-    annotationProcessor appAptDependencies.butterKnife
 }

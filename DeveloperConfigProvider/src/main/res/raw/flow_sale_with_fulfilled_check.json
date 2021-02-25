@@ -44,7 +44,8 @@
                   "name": "TRANSACTION_PROCESSING",
                   "flowApps": [
                     {
-                      "id": "com.aevi.sdk.pos.flow.paymentservicesample"
+                      "id": "com.aevi.sdk.pos.flow.paymentservicesample",
+                      "delegateCancellationsTo": true
                     }
                   ]
                 }
