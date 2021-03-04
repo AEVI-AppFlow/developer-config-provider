@@ -1,5 +1,5 @@
 ext {
-    configProviderLibraryVersion = "2.1.3"
+    configProviderLibraryVersion = "2.1.4"
     appFlowConstantsVersion = '2.3.2'
 
     appDependencies = [
